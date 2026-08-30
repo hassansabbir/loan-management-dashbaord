@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Poppins", "Inter", sans-serif;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: #F4F7FC;
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Ant Design modal adjustments */
+.ant-modal-footer {
+  margin-top: 0 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Ant Design Table adjustments for White Theme */
+.ant-table {
+  background: #FFFFFF !important;
+  color: #1E293B !important;
+  border-radius: 12px !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #F8FAFC !important;
+  color: #475569 !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+  padding: 14px 16px !important;
+}
+
+.ant-table-tbody > tr > td {
+  border-bottom: 1px solid #F1F5F9 !important;
+  padding: 16px !important;
+  font-size: 14px !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #F8FAFC !important;
+}
+
+/* Ant Design Pagination */
+.ant-pagination-item-active {
+  background-color: #1B64F2 !important;
+  border-color: #1B64F2 !important;
+}
+
+.ant-pagination-item-active a {
+  color: #FFFFFF !important;
+}
+
+/* Ant Design Switch */
+.ant-switch-checked {
+  background-color: #1B64F2 !important;
+}
+
+/* Editor height */
+.jodit-workplace {
+  height: 500px !important;
+}
